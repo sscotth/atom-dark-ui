@@ -103,13 +103,10 @@
   }
 
   .tab.active {
+    top: 6px;
     z-index: 1;
     color: @text-color-highlight;
     box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
-
-    .title{
-      top: 1px;
-    }
 
     .close-icon {
       line-height: @tab-height - 1px;
@@ -118,7 +115,6 @@
 
     &, &:before, &:after {
       background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 7%), @tab-background-color-active);
-      height: @tab-height + 1px;
     }
 
     &:before {
